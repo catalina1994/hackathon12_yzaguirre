@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon 12</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="banner py-1 px-1">
+        <div class="flex justify-end">
+            <i id="btnmenu" class="material-icons  third-color btn ">dehaze</i>
+        </div>
+        <h2 class="banner__caption">Hackathon 12</h2>
+    </div>
+    <nav class="menu third-color">
+        <i id="btnClose" class="material-icons flex justify-end btn ">close</i>
+        <h3 class="pb-1 ">Indice</h3>
+        <article >
+            <ul class="menu__list">
+                <li><a href="#ejercicio1">Reto 2</a></li>
+                <li><a href="#ejercicio2">Reto 3</a></li>
+            </ul>
+        </article>
+    </nav>
+    <div class="container">
+        <section class="my-2">
+            <h2 class="mb-1 secundary-color">Retos</h2>
+            <section>
+                <article class="card" id="ejercicio1">
+                    <h4 class="card__title">RETO 2: Calculadora</h4>
+                    <div class="calculator">
+                        <article class="calculator__pantalla">
+                            <input type="text" id="result" placeholder="0" value="0">
+                        </article>
+                        <article class="calculator__teclado">
+                            <button name="data-number" class="number">1</button>
+                            <button name="data-number" class="number">2</button>
+                            <button name="data-number"  class="number">3</button>
+                            <button name="data-operador" class="operador">+</button>
+                            <button name="data-number" class="number">4</button>
+                            <button name="data-number" class="number">5</button>
+                            <button name="data-number" class="number">6</button>
+                            <button name="data-operador" class="operador">-</button>
+                            <button name="data-number" class="number">7</button>
+                            <button name="data-number" class="number">8</button>
+                            <button name="data-number" class="number">9</button>
+                            <button name="data-operador" class="operador">/</button>
+                            <button name="data-delete">C</button>
+                            <button name="data-number" class="number">0</button>
+                            <button name="data-igual">=</button>
+                            <button name="data-operador" class="operador">x</button>
+                        </article>
+                    </div>
+                </article>
+                <article class="card" id="ejercicio2">
+                    <h4 class="card__title">RETO 3: TodoList</h4>
+                    <div class="todoList">
+                        <article class="todoList__add">
+                            <div class="flex justify-between mb-1">
+                                <input id="valueAdd" type="text" placeholder="Ingresar" value="">
+                                <button id="btnAdd">Agregar</button> 
+                            </div>
+                            
+                        </article>
+                        <article class="todoList__list" id="">
+                            <h4 class="todoList__title">Lista</h4>
+                            <ul id="todoListTotal">
+                                
+                            </ul>
+                        </article>
+                    </div>
+                </article>
+
+            </section>
+        </section>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

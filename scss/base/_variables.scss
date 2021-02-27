@@ -1,0 +1,30 @@
+/*colores*/
+$color-principal: #14c1c7;
+$color-secundary: #16d3da;
+$color-third:#fff;
+ 
+$color-auxiliar:#316099;
+$color-auxiliar-secundary:rgb(64, 160, 207);
+
+/*font-weight*/
+
+$font-bold:600;
+$font-normal:400;
+$font-light:300;
+
+/*font-size*/
+$font-size-small:12px;
+$font-size:16px;
+$font-size-large:22px;
+$font-size-xlarge:36px;
+
+/*font-family*/
+$font-roboto:'Roboto', Arial, Helvetica, sans-serif ;
+$font-helvetica: Helvetica, Arial, sans-serif;
+
+//mixins
+@mixin mediaQ($breakpoint) {
+    @media screen and (min-width: $breakpoint){
+      @content;
+    }
+  }

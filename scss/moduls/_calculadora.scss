@@ -1,0 +1,33 @@
+.calculator{
+    width: 100%;
+    @include mediaQ(769px){
+        margin: 0 auto;
+        width: 350px;
+      }
+    &__pantalla{
+        input{
+            background-color: #000;
+            color: #fff;
+            border: none;
+            width: 100%;
+            padding: .8em .5em;
+            text-align: right;
+            font-size:1.4em;
+            border-radius: 0;
+        }
+    }
+    &__teclado{
+
+        display: flex;
+        flex-wrap: wrap;
+        button{
+            width: 25%;
+            padding: 1.5em 0;
+            border: none;
+            border: 1px solid #fff;
+            &:hover{
+                background-color: rgb(224, 222, 222);
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.menu{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    background-color: $color-principal;
+    height: 100%;
+    flex-wrap: wrap;
+    padding-bottom: .7em;
+    z-index: 99;
+    padding: 2em;
+    transition: left .7s;
+    &__list{
+        a{
+            color: rgba($color-third, .7);
+            &:hover{
+                color: rgba($color-third, 5);
+        }
+    }
+    li{
+        margin-bottom: 1em;
+        
+    }}
+    &.active{
+        left: 0;
+    }
+    
+}

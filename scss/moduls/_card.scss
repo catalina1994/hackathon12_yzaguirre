@@ -1,0 +1,24 @@
+.card{
+    padding: 2em 2em;
+    border-bottom: 2px solid rgb(175, 174, 174);
+    background-color: rgb(252, 252, 252);
+    margin-bottom: .7em;
+    transition: background-color .5s , border-bottom .5s;
+    &__title{
+        margin-bottom: 1em;
+        color: rgb(32, 32, 32);
+    }
+    &__list{
+        color: rgb(65, 63, 63);
+        margin-left: 2em;
+        li{
+            list-style: decimal;
+            padding-bottom: .3em;
+        }
+    }
+
+    &:hover{
+        border-bottom: 2px solid $color-secundary;
+        background-color: rgba($color-secundary,  .2);
+    }
+}
